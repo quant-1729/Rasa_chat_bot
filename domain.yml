@@ -1,0 +1,141 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - abuse
+  - ask_for_directions
+  - provide_location
+  - provide_current_location
+  - ask_for_map
+  - confirm_map_display
+  - ask_for_alternate_route
+  - ask_about_traffic
+  - provide_traffic_info
+  - ask_for_public_transport
+  - provide_public_transport_options
+  - ask_for_walking_directions
+  - provide_walking_directions
+  - ask_for_biking_directions
+  - provide_biking_directions
+  - ask_for_driving_directions
+  - provide_driving_directions
+  - ask_for_taxi_service
+  - provide_taxi_service_info
+  - ask_for_ride_sharing
+  - provide_ride_sharing_info
+  - ask_for_distance
+  - ask_for_eta
+  - ask_for_landmarks
+  - ask_for_restaurants
+  - ask_for_hotels
+  - ask_for_gas_stations
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_abuse:
+  - text: "Bosdike chat_gpt nahi hai , yahi gand phad denge aage se gali diya to"
+
+  utter_ask_for_directions:
+ - text: "Sure, I can assist you with that. Please tell me the name of the location you want to go to."
+
+  utter_ask_for_location:
+ - text: "Thank you! Now, could you tell me your current location or the starting point?"
+
+  utter_ask_for_map:
+ - text: "Sure, here's the map to your destination."
+
+  utter_confirm_map_display:
+ - text: "You're welcome! If you need any further assistance, feel free to ask."
+
+  utter_ask_for_alternate_route:
+ - text: "Let me look for an alternate route."
+
+  utter_ask_about_traffic:
+ - text: "Let me check the current traffic conditions and find the best route for you."
+
+  utter_provide_traffic_info:
+ - text: "Yes, there's heavy traffic on your route. Would you like to consider an alternate path?"
+
+  utter_ask_for_public_transport:
+ - text: "Certainly! Let me provide you with the available public transport options."
+
+  utter_provide_public_transport_options:
+ - text: "Here are the nearby public transport options you can use."
+
+  utter_ask_for_walking_directions:
+ - text: "Let me calculate the walking directions for you."
+
+  utter_provide_walking_directions:
+ - text: "Here are the walking directions to your destination."
+
+  utter_ask_for_biking_directions:
+ - text: "Let me find the biking directions for you."
+
+  utter_provide_biking_directions:
+ - text: "Here are the biking directions to your destination."
+
+  utter_ask_for_driving_directions:
+ - text: "Certainly! Let me provide you with the driving directions."
+
+  utter_provide_driving_directions:
+ - text: "Here are the driving directions to your destination."
+
+  utter_ask_for_taxi_service:
+ - text: "Sure, I can help you find a taxi service."
+
+  utter_provide_taxi_service_info:
+ - text: "Here are some taxi services and their estimated costs."
+
+  utter_ask_for_ride_sharing:
+ - text: "Let me check the available ride-sharing options for you."
+
+  utter_provide_ride_sharing_info:
+ - text: "Here are the ride-sharing options and their estimated costs."
+
+  utter_ask_for_distance:
+ - text: "The distance to your destination is approximately X kilometers/miles."
+
+  utter_ask_for_eta:
+ - text: "The estimated travel time is X minutes/hours."
+
+  utter_ask_for_landmarks:
+ - text: "There are several landmarks and attractions near your destination, including..."
+
+  utter_ask_for_restaurants:
+ - text: "Sure, here are some nearby restaurants you might like."
+
+  utter_ask_for_hotels:
+ - text: "Certainly, here are some hotels nearby if you are in hurry then you can go to Blackout or you can order the food online."
+
+  utter_ask_for_gas_stations:
+ - text: "Let me find the gas stations along your route."
+  
+  utter_affirm:
+ - text: " Affirm kiya"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

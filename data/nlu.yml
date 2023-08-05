@@ -1,0 +1,251 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: abuse
+  examples: | 
+    - bhadwe
+    - bosdike
+    - madarchod
+    - bhen ke lund 
+    - motherfucker
+    - harami
+    - betichod
+
+- intent: deny
+  examples: |
+    - No, thanks
+    - Not interested
+    - No way
+    - Nah
+    - Never mind
+
+- intent: ask_for_directions
+  examples: |
+    - Can you help me with directions?
+    - I need directions to a place.
+    - How do I get to [destination]?
+    - How can I reach [destination]?
+
+- intent: provide_location
+  examples: |
+    - I want to go to [destination]
+    - The address is [address]
+    - Take me to [destination]
+
+- intent: provide_current_location
+  examples: |
+    - I am currently at [current_location]
+    - My current location is [current_location]
+    - I am at [current_location]
+
+- intent: ask_for_map
+  examples: |
+    - Can you show me the map?
+    - Show me the map, please.
+    - I want to see the map.
+
+- intent: confirm_map_display
+  examples: |
+    - Thanks for the map.
+    - The map looks good.
+    - Looks great, thanks.
+
+- intent: ask_for_alternate_route
+  examples: |
+    - Is there an alternate route?
+    - Can you find a faster route?
+    - Find another way to reach [destination].
+
+- intent: ask_about_traffic
+  examples: |
+    - How's the traffic?
+    - Is there any traffic on the way?
+    - Check the traffic conditions.
+
+- intent: provide_traffic_info
+  examples: |
+    - Is there heavy traffic?
+    - Is the road congested?
+    - What's the traffic like?
+
+- intent: ask_for_public_transport
+  examples: |
+    - Can you suggest public transport options?
+    - How can I get there using public transport?
+    - What are the nearby bus stops?
+
+- intent: provide_public_transport_options
+  examples: |
+    - Which subway station should I go to?
+    - Tell me about the available public transport options.
+
+- intent: ask_for_walking_directions
+  examples: |
+    - Is it walking distance from here?
+    - How far is it on foot?
+
+- intent: provide_walking_directions
+  examples: |
+    - How long will it take to walk there?
+    - Can you show me the walking route?
+
+- intent: ask_for_biking_directions
+  examples: |
+    - Can I bike to the location?
+    - Is there a bike route available?
+
+- intent: provide_biking_directions
+  examples: |
+    - How long will it take to bike there?
+    - Show me the biking route.
+
+- intent: ask_for_driving_directions
+  examples: |
+    - Can I drive there?
+    - Is there a direct driving route?
+
+- intent: provide_driving_directions
+  examples: |
+    - How long will it take to drive there?
+    - Show me the driving route.
+
+- intent: ask_for_taxi_service
+  examples: |
+    - Are there any taxi services available?
+    - Can you book a taxi for me?
+    - How can I find a taxi?
+
+- intent: provide_taxi_service_info
+  examples: |
+    - How much will the taxi cost?
+    - Tell me about the available taxi companies.
+
+- intent: ask_for_ride_sharing
+  examples: |
+    - Can I use a ride-sharing service?
+    - Are there any Uber or Lyft options?
+    - How do I get a ride-share?
+
+- intent: provide_ride_sharing_info
+  examples: |
+    - How much does the ride-sharing cost?
+    - Show me the available ride-sharing options.
+
+- intent: ask_for_distance
+  examples: |
+    - How far is it from here?
+    - What's the distance to the destination?
+
+- intent: ask_for_eta
+  examples: |
+    - How long will it take to get there?
+    - What's the estimated travel time?
+
+- intent: ask_for_landmarks
+  examples: |
+    - Are there any landmarks nearby?
+    - Tell me about the nearby attractions.
+
+- intent: ask_for_restaurants
+  examples: |
+    - Can you recommend nearby restaurants?
+    - Where can I grab a bite to eat?
+
+- intent: ask_for_hotels
+  examples: |
+    - Are there any hotels in the area?
+    - Suggest nearby hotels.
+
+- intent: ask_for_gas_stations
+  examples: |
+    - Are there any gas stations along the way?
+    - Where can I refuel my car?

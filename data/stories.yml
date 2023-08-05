@@ -1,0 +1,147 @@
+version: "3.1"
+
+stories:
+
+- story: violent
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: abuse 
+  - action: utter_abuse
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_affirm
+    - intent: ask_for_directions
+    - action: utter_ask_for_directions
+    - intent: provide_location
+    - action: utter_ask_for_location
+    - intent: provide_current_location
+    - action: utter_ask_for_map
+    - intent: confirm_map_display
+    - action: utter_confirm_map_display
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: alternate route and traffic info
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_affirm
+    - intent: ask_for_directions
+    - action: utter_ask_for_directions
+    - intent: provide_location
+    - action: utter_ask_for_location
+    - intent: provide_current_location
+    - action: utter_ask_about_traffic
+    - intent: provide_traffic_info
+    - action: utter_provide_traffic_info
+    - intent: ask_for_alternate_route
+    - action: utter_ask_for_alternate_route
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: public transport options
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_affirm
+    - intent: ask_for_directions
+    - action: utter_ask_for_directions
+    - intent: provide_location
+    - action: utter_ask_for_location
+    - intent: provide_current_location
+    - action: utter_ask_for_public_transport
+    - intent: provide_public_transport_options
+    - action: utter_provide_public_transport_options
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: walking directions
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_affirm
+    - intent: ask_for_directions
+    - action: utter_ask_for_directions
+    - intent: provide_location
+    - action: utter_ask_for_location
+    - intent: provide_current_location
+    - action: utter_ask_for_walking_directions
+    - intent: provide_walking_directions
+    - action: utter_provide_walking_directions
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: driving directions with gas stations
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_affirm
+    - intent: ask_for_directions
+    - action: utter_ask_for_directions
+    - intent: provide_location
+    - action: utter_ask_for_location
+    - intent: provide_current_location
+    - action: utter_ask_for_driving_directions
+    - intent: provide_driving_directions
+    - action: utter_provide_driving_directions
+    - intent: ask_for_gas_stations
+    - action: utter_ask_for_gas_stations
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: ride-sharing and landmarks
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_affirm
+    - intent: ask_for_directions
+    - action: utter_ask_for_directions
+    - intent: provide_location
+    - action: utter_ask_for_location
+    - intent: provide_current_location
+    - action: utter_ask_for_ride_sharing
+    - intent: provide_ride_sharing_info
+    - action: utter_provide_ride_sharing_info
+    - intent: ask_for_landmarks
+    - action: utter_ask_for_landmarks
+    - intent: goodbye
+    - action: utter_goodbye
+
+# Add more stories for other scenarios as needed.
