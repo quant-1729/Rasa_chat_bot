@@ -249,3 +249,250 @@ nlu:
   examples: |
     - Are there any gas stations along the way?
     - Where can I refuel my car?
+
+- intent: my_name
+  examples: |
+    - my name is [amandeep]{"entity":"name", "value":"amandeep"}
+    - my name is [sarthak]{"entity":"name", "value":"sarthak"}
+    - my name is [bhanu]{"entity":"name", "value":"bhanu"}
+    - my name is [piyush]{"entity":"name", "value":"piyush"}
+    - [amandeep]{"entity":"name", "value":"amandeep"} is my name
+    - [amandeep]{"entity":"name", "value":"amandeep"} this side.
+    - people call me [amandeep]{"entity":"name", "value":"amandeep"}
+    - you can call me [amandeep]{"entity":"name", "value":"amandeep"}
+
+- intent: mobile_number
+  examples: |
+    - my number is [9876987699]{"entity":"number"}
+    - [9876987699]{"entity":"number"}
+    - [9876987699]{"entity":"number"} is my number
+    - my mobile number is [9876987699]{"entity":"number"}
+
+- intent: mnnit_website
+  examples: |
+    - take me to mnnit's website
+    - can you provide the link for mnnit official website
+    - where can I find latest announcements for college
+    - where can I get more information about college
+    - Is there any official website of mnnit
+    - website of mnnit
+    - Can you help me with course registration?
+    - Where can I find information about majors?
+
+- intent: courses
+  examples: |
+    - what different courses are offered
+    - different courses provided by the college
+    - list of different courses
+    - list of different programs
+    - can you help me with the programs mnnit allahabad offers
+    - different programs offered by the college
+    - different training programs offered
+    - branches in mnnit allahabad
+    - branches under b.tech in our college
+    - What are the available courses in the college?
+    - Can you provide information about the course curriculum?
+    - Which courses are popular among students?
+
+- intent: ask_placements
+  examples: |
+    - placement offers
+    - what are the previous placement offers?
+    - different placement offers offered to students
+    - different companies offers
+    - different placement offered
+    - previous placement offers
+    - what are the different placement offers offered to students
+    - student's placement offers
+    - what are the placement stats of our college
+    - which companies come to college
+    - who is in charge of our placements
+    - where can i get information about placements
+    - Does the college have a placement cell?
+    - How does the college support students with job placements?
+    - What companies visit the campus for placements?
+
+- intent: ask_college_intro
+  examples: |
+    - Tell me about the college.
+    - Can you give me an overview of the college?
+    - What is special about this college?
+
+- intent: ask_admission_process
+  examples: |
+    - How do I apply for admission to this college?
+    - What are the steps in the admission process?
+    - When is the admission deadline?
+
+- intent: ask_about_campus_life
+  examples: |
+    - What is the campus life like in this college?
+    - Are there any extracurricular activities on campus?
+    - Tell me about student clubs and organizations.
+
+- intent: ask_about_hostel_facilities
+  examples: |
+    - How are the hostel facilities in the college?
+    - Can you provide details about the accommodation options?
+    - Is there a separate hostel for boys and girls?
+
+- intent: ask_about_scholarships
+  examples: |
+    - Are there any scholarships available for students?
+    - How can I apply for a scholarship in the college?
+    - What are the eligibility criteria for scholarships?
+
+- intent: ask_about_library
+  examples: |
+    - Tell me about the college library.
+    - What resources are available in the library?
+    - What are the library hours?
+
+- intent: ask_about_fees
+  examples: |
+    - How much are the tuition fees for the courses?
+    - Can you provide details about the fee structure?
+    - Are there any additional fees apart from tuition?
+
+- intent: ask_about_festivals_events
+  examples: |
+    - What festivals and events are celebrated on campus?
+    - Are there any annual cultural fests in the college?
+    - How can I participate in college events?
+
+- intent: ask_about_mentorship_program
+  examples: |
+    - Does the college have a mentorship program?
+    - How does mentorship benefit students?
+    - Can I get academic guidance from a mentor?
+
+- intent: ask_about_campus_tour
+  examples: |
+    - Can I take a campus tour before joining?
+    - How do I schedule a campus visit?
+    - Is there an orientation program for new students?
+
+- intent: ask_about_alumni_network
+  examples: |
+    - Tell me about the college's alumni network.
+    - How can I connect with alumni for career guidance?
+    - Are there any alumni success stories?
+
+- intent: ask_about_grading_system
+  examples: |
+    - How is the grading system in the college?
+    - Can you explain the evaluation process?
+    - What is the passing criteria for exams?
+
+- intent: ask_about_faculty
+  examples: |
+    - Tell me about the faculty at the college.
+    - Are the professors experienced and qualified?
+    - Can I get support from professors outside of classes?
+
+- intent: ask_about_lab_facilities
+  examples: |
+    - What lab facilities are available in the college?
+    - Can I access the labs outside of class hours?
+    - How do I book lab equipment?
+
+- intent: ask_about_student_support_services
+  examples: |
+    - What student support services are provided by the college?
+    - Is there counseling available for personal issues?
+    - Where can I get academic help if needed?
+
+- intent: ask_about_sports_facilities
+  examples: |
+    - Are there sports facilities on campus?
+    - What sports activities are available for students?
+    - Can I join a college sports team?
+
+- intent: ask_about_transportation
+  examples: |
+    - Is transportation provided for daily commuting?
+    - How can I reach the college using public transport?
+    - Are there shuttle services to nearby areas?
+
+- intent: ask_about_research_opportunities
+  examples: |
+    - Are there research opportunities for students?
+    - Can I get involved in research projects?
+    - How do I approach faculty for research collaborations?
+
+- intent: ask_about_exam_preparation_tips
+  examples: |
+    - Can you provide tips for exam preparation?
+    - How should I manage my study time effectively?
+    - Are there any study resources available for exams?
+
+- intent: ask_about_holidays
+  examples: |
+    - What are the holidays and vacations in the college?
+    - When does the college have breaks between semesters?
+    - Can I visit my hometown during holidays?
+
+- intent: ask_about_community_engagement
+  examples: |
+    - Is there a community engagement program at the college?
+    - Can I volunteer for social causes through the college?
+    - Tell me about the college's social initiatives.
+
+- intent: ask_about_internship_opportunities
+  examples: |
+    - Are there internship opportunities for students?
+    - How can I apply for internships through the college?
+    - Can the college help me find internships?
+
+- intent: ask_about_student_mental_health
+  examples: |
+    - How does the college support student mental health?
+    - Are there counseling services available for stress management?
+    - Can I seek help for mental health issues?
+
+- intent: ask_about_student_grievance_redressal
+  examples: |
+    - How are student grievances addressed in the college?
+    - Is there a process for submitting complaints or feedback?
+    - Who can I contact for resolving issues?
+
+- intent: ask_about_social_events
+  examples: |
+    - Are there social events and gatherings on campus?
+    - How can I participate in college social activities?
+    - Are there any student clubs for social interactions?
+
+- intent: ask_about_part_time_jobs
+  examples: |
+    - Can I work part-time while studying at the college?
+    - Are there any on-campus part-time job opportunities?
+    - What are the rules for working part-time as a student?
+
+- intent: ask_about_food_options
+  examples: |
+    - Tell me about the food options on campus.
+    - Are there different dining facilities available?
+    - Can I get food delivered to the hostel?
+
+- intent: ask_about_healthcare_facilities
+  examples: |
+    - What healthcare facilities are available on campus?
+    - Is there a college health center for medical assistance?
+    - How can I access healthcare services?
+
+- intent: ask_about_research_labs
+  examples: |
+    - Are there research labs for students in the college?
+    - How can I get involved in research projects?
+    - Can I work on my own research ideas?
+
+- intent: ask_about_recreational_activities
+  examples: |
+    - What recreational activities are available on campus?
+    - Are there sports, arts, or music clubs?
+    - How can I spend leisure time on campus?
+
+- intent: ask_about_community_culture
+  examples: |
+    - Tell me about the college's community culture.
+    - How are students from diverse backgrounds welcomed?

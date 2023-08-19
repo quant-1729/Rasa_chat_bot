@@ -1,4 +1,6 @@
-version: "3.1"
+
+
+      version: "3.1"
 
 stories:
 
@@ -144,4 +146,226 @@ stories:
     - intent: goodbye
     - action: utter_goodbye
 
-# Add more stories for other scenarios as needed.
+- story: Greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: Goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Affirmation
+  steps:
+    - intent: affirm
+    - action: utter_happy
+
+- story: Denial
+  steps:
+    - intent: deny
+    - action: utter_did_that_help
+
+- story: Mood Great
+  steps:
+    - intent: mood_great
+    - action: utter_cheer_up
+
+- story: Mood Unhappy
+  steps:
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+
+- story: Bot Challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: Abuse
+  steps:
+    - intent: abuse
+    - action: utter_abuse
+
+- story: Ask for Directions
+  steps:
+    - intent: ask_for_directions
+    - action: utter_ask_for_location
+
+# ... (other stories)
+
+- story: Ask for Gas Stations3
+  steps:
+    - intent: ask_for_gas_stations
+    - action: utter_ask_for_gas_stations
+
+# Aman stories
+
+- story: mnnit website path
+  steps:
+  - intent: mnnit website
+  - action: utter_website
+
+- story: placements path
+  steps:
+  - intent: ask_placements
+  - action: utter_tpo
+
+- story: courses information
+  steps:
+  - intent: courses
+  - action: utter_course
+
+- story: intro to college
+  steps:
+  - intent: ask_college_intro
+  - action: utter_college_intro
+
+- story: admission process
+  steps:
+  - intent: ask_admission_process
+  - action: utter_ask_admission_process
+
+- story: Ask About Campus Life
+  steps:
+  - intent: ask_about_campus_life
+  - action: utter_ask_about_campus_life
+
+- story: Ask About Hostel Facilities
+  steps:
+  - intent: ask_about_hostel_facilities
+  - action: utter_ask_about_hostel_facilities
+
+- story: Ask About Scholarships
+  steps:
+  - intent: ask_about_scholarships
+  - action: utter_ask_about_scholarships
+
+- story: Ask About Library
+  steps:
+  - intent: ask_about_library
+  - action: utter_ask_about_library
+
+- story: Ask About Fees
+  steps:
+  - intent: ask_about_fees
+  - action: utter_ask_about_fees
+
+- story: Ask About Festival Events
+  steps:
+  - intent: ask_about_festivals_events
+  - action: utter_ask_about_festivals_events
+
+- story: Ask About Mentorship Program
+  steps:
+  - intent: ask_about_mentorship_program
+  - action: utter_ask_about_mentorship_program
+
+- story: Ask About Campus Tour
+  steps:
+  - intent: ask_about_campus_tour
+  - action: utter_ask_about_campus_tour
+
+- story: Ask About Alumni Network
+  steps:
+  - intent: ask_about_alumni_network
+  - action: utter_ask_about_alumni_network
+
+- story: Ask About Grading System
+  steps:
+  - intent: ask_about_grading_system
+  - action: utter_ask_about_grading_system
+
+- story: Ask About Faculty
+  steps:
+  - intent: ask_about_faculty
+  - action: utter_ask_about_faculty
+
+- story: Ask About Lab Facilities
+  steps:
+  - intent: ask_about_lab_facilities
+  - action: utter_ask_about_lab_facilities
+
+- story: Ask About Student Support Services
+  steps:
+  - intent: ask_about_student_support_services
+  - action: utter_ask_about_student_support_services
+
+- story: Ask About Sports Facilities
+  steps:
+  - intent: ask_about_sports_facilities
+  - action: utter_ask_about_sports_facilities
+
+- story: Ask About Transportation
+  steps:
+  - intent: ask_about_transportation
+  - action: utter_ask_about_transportation
+
+- story: Ask About Research Opportunities
+  steps:
+  - intent: ask_about_research_opportunities
+  - action: utter_ask_about_research_opportunities
+
+- story: Ask About Exam Preparation Tips
+  steps:
+  - intent: ask_about_exam_preparation_tips
+  - action: utter_ask_about_exam_preparation_tips
+
+- story: Ask About Holidays
+  steps:
+  - intent: ask_about_holidays
+  - action: utter_ask_about_holidays
+
+- story: Ask About Community Engagement
+  steps:
+  - intent: ask_about_community_engagement
+  - action: utter_ask_about_community_engagement
+
+- story: Ask About Internship Opportunities
+  steps:
+  - intent: ask_about_internship_opportunities
+  - action: utter_ask_about_internship_opportunities
+
+- story: Ask About Student Mental Health
+  steps:
+  - intent: ask_about_student_mental_health
+  - action: utter_ask_about_student_mental_health
+
+- story: Ask About Student Grievance Redressal
+  steps:
+  - intent: ask_about_student_grievance_redressal
+  - action: utter_ask_about_student_grievance_redressal
+
+- story: Ask About Social Events
+  steps:
+  - intent: ask_about_social_events
+  - action: utter_ask_about_social_events
+
+- story: Ask About Part-Time Jobs
+  steps:
+  - intent: ask_about_part_time_jobs
+  - action: utter_ask_about_part_time_jobs
+
+- story: Ask About Food Options
+  steps:
+  - intent: ask_about_food_options
+  - action: utter_ask_about_food_options
+
+- story: Ask About Healthcare Facilities
+  steps:
+  - intent: ask_about_healthcare_facilities
+  - action: utter_ask_about_healthcare_facilities
+
+- story: Ask About Research Labs
+  steps:
+  - intent: ask_about_research_labs
+  - action: utter_ask_about_research_labs
+
+- story: Ask About Recreational Activities
+  steps:
+  - intent: ask_about_recreational_activities
+  - action: utter_ask_about_recreational_activities
+
+- story: Ask About Community Culture
+  steps:
+  - intent: ask_about_community_culture
+  - action: utter_ask_about_community_culture

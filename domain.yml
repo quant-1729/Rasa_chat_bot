@@ -35,6 +35,41 @@ intents:
   - ask_for_restaurants
   - ask_for_hotels
   - ask_for_gas_stations
+  - tell_name
+  - mnnit_website
+  - courses
+  - ask_placements
+  - ask_college_intro
+  - ask_admission_process
+  - ask_about_campus_life
+  - ask_about_hostel_facilities
+  - ask_about_scholarships
+  - ask_about_library
+  - ask_about_fees
+  - ask_about_festivals_events
+  - ask_about_mentorship_program
+  - ask_about_campus_tour
+  - ask_about_alumni_network
+  - ask_about_grading_system
+  - ask_about_faculty
+  - ask_about_lab_facilities
+  - ask_about_student_support_services
+  - ask_about_sports_facilities
+  - ask_about_transportation
+  - ask_about_research_opportunities
+  - ask_about_exam_preparation_tips
+  - ask_about_holidays
+  - ask_about_community_engagement
+  - ask_about_internship_opportunities
+  - ask_about_student_mental_health
+  - ask_about_student_grievance_redressal
+  - ask_about_social_events
+  - ask_about_part_time_jobs
+  - ask_about_food_options
+  - ask_about_healthcare_facilities
+  - ask_about_research_labs
+  - ask_about_recreational_activities
+  - ask_about_community_culture
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -59,83 +94,195 @@ responses:
   - text: "Bosdike chat_gpt nahi hai , yahi gand phad denge aage se gali diya to"
 
   utter_ask_for_directions:
- - text: "Sure, I can assist you with that. Please tell me the name of the location you want to go to."
+  - text: "Sure, I can assist you with that. Please tell me the name of the location you want to go to."
 
   utter_ask_for_location:
- - text: "Thank you! Now, could you tell me your current location or the starting point?"
+  - text: "Thank you! Now, could you tell me your current location or the starting point?"
 
   utter_ask_for_map:
- - text: "Sure, here's the map to your destination."
+  - text: "Sure, here's the map to your destination."
 
   utter_confirm_map_display:
- - text: "You're welcome! If you need any further assistance, feel free to ask."
+  - text: "You're welcome! If you need any further assistance, feel free to ask."
 
   utter_ask_for_alternate_route:
- - text: "Let me look for an alternate route."
+  - text: "Let me look for an alternate route."
 
   utter_ask_about_traffic:
- - text: "Let me check the current traffic conditions and find the best route for you."
+  - text: "Let me check the current traffic conditions and find the best route for you."
 
   utter_provide_traffic_info:
- - text: "Yes, there's heavy traffic on your route. Would you like to consider an alternate path?"
+  - text: "Yes, there's heavy traffic on your route. Would you like to consider an alternate path?"
 
   utter_ask_for_public_transport:
- - text: "Certainly! Let me provide you with the available public transport options."
+  - text: "Certainly! Let me provide you with the available public transport options."
 
   utter_provide_public_transport_options:
- - text: "Here are the nearby public transport options you can use."
+  - text: "Here are the nearby public transport options you can use."
 
   utter_ask_for_walking_directions:
- - text: "Let me calculate the walking directions for you."
+  - text: "Let me calculate the walking directions for you."
 
   utter_provide_walking_directions:
- - text: "Here are the walking directions to your destination."
+  - text: "Here are the walking directions to your destination."
 
   utter_ask_for_biking_directions:
- - text: "Let me find the biking directions for you."
+  - text: "Let me find the biking directions for you."
 
   utter_provide_biking_directions:
- - text: "Here are the biking directions to your destination."
+  - text: "Here are the biking directions to your destination."
 
   utter_ask_for_driving_directions:
- - text: "Certainly! Let me provide you with the driving directions."
+  - text: "Certainly! Let me provide you with the driving directions."
 
   utter_provide_driving_directions:
- - text: "Here are the driving directions to your destination."
+  - text: "Here are the driving directions to your destination."
 
   utter_ask_for_taxi_service:
- - text: "Sure, I can help you find a taxi service."
+  - text: "Sure, I can help you find a taxi service."
 
   utter_provide_taxi_service_info:
- - text: "Here are some taxi services and their estimated costs."
+  - text: "Here are some taxi services and their estimated costs."
 
   utter_ask_for_ride_sharing:
- - text: "Let me check the available ride-sharing options for you."
+  - text: "Let me check the available ride-sharing options for you."
 
   utter_provide_ride_sharing_info:
- - text: "Here are the ride-sharing options and their estimated costs."
+  - text: "Here are the ride-sharing options and their estimated costs."
 
   utter_ask_for_distance:
- - text: "The distance to your destination is approximately X kilometers/miles."
+  - text: "The distance to your destination is approximately X kilometers/miles."
 
   utter_ask_for_eta:
- - text: "The estimated travel time is X minutes/hours."
+  - text: "The estimated travel time is X minutes/hours."
 
   utter_ask_for_landmarks:
- - text: "There are several landmarks and attractions near your destination, including..."
+  - text: "There are several landmarks and attractions near your destination, including..."
 
   utter_ask_for_restaurants:
- - text: "Sure, here are some nearby restaurants you might like."
+  - text: "Sure, here are some nearby restaurants you might like."
 
   utter_ask_for_hotels:
- - text: "Certainly, here are some hotels nearby if you are in hurry then you can go to Blackout or you can order the food online."
+  - text: "Certainly, here are some hotels nearby if you are in hurry then you can go to Blackout or you can order the food online."
 
   utter_ask_for_gas_stations:
- - text: "Let me find the gas stations along your route."
+  - text: "Let me find the gas stations along your route."
   
   utter_affirm:
- - text: " Affirm kiya"
+  - text: " Affirm kiya"
+
+  utter_my_name:
+    - text: "What is your name?"
+
+  utter_mobile_number:
+    - text: "What is your mobile number?"
+
+  utter_thanks:
+    - text: "Thanks for providing the values!"
+
+  utter_website:
+    - text: "Here's the link for mnnit's official website where you can find all the information about latest announcements, about our college and information regarding registration, result, academic schedule and curriculum"
+
+  utter_tpo:
+    - text: "TPO (Training and Placement Office) is responsible for placements in our college.Here's the link for the official website of TPO where you can find all information regarding placement statistics and the companies that come in our college.  "
+
+  utter_course:
+    - text: "Here's the link to check details about courses offered in Mnnit Allahbad"
+
+  utter_college_intro:
+    - text: "Motilal Nehru National Institute of Technology (MNNIT or NIT Allahabad), formerly Motilal Nehru Regional Engineering College (MNREC), is one of the 31 National Institutes of Technology, located in Prayagraj district of Uttar Pradesh in India. The college has the distinction of being the first in the country to start an undergraduate programme in Computer Science & Engineering, in 1976�77."
+
+  utter_ask_admission_process:
+    - text: "To apply for admission to MNNIT Allahabad, you can visit the official website and follow the admission process. The admission deadline for the upcoming session is [Date]."
+
+  utter_ask_about_campus_life:
+    - text: "Campus life at MNNIT Allahabad is lively and filled with various activities, clubs, and events. Students actively participate in sports, cultural fests, and community engagements."
+
+  utter_ask_about_hostel_facilities:
+    - text: "MNNIT Allahabad provides hostel facilities for both boys and girls. The hostels are well-maintained and offer a safe and comfortable living environment."
+
+  utter_ask_about_scholarships:
+    - text: "MNNIT Allahabad offers scholarships based on academic performance and other criteria. You can check the official website for more information on scholarship applications."
+
+  utter_ask_about_library:
+    - text: "The college library at MNNIT Allahabad is well-equipped with a vast collection of books, journals, and online resources. It opens at [Time] and offers a quiet space for studying."
+
+  utter_ask_about_fees:
+    - text: "The tuition fees for courses at MNNIT Allahabad may vary depending on the program. You can find details about the fee structure on the official website."
+
+  utter_ask_about_festivals_events:
+    - text: "MNNIT Allahabad celebrates various festivals and events on campus. There are annual cultural fests and opportunities for students to participate in college events."
+
+  utter_ask_about_mentorship_program:
+    - text: "Yes, MNNIT Allahabad has a mentorship program where students can receive academic guidance and support from mentors."
+
+  utter_ask_about_campus_tour:
+    - text: "You can schedule a campus tour at MNNIT Allahabad by contacting the admissions office. The college also conducts orientation programs for new students."
+
+  utter_ask_about_alumni_network:
+    - text: "MNNIT Allahabad has a strong and active alumni network. Alumni often participate in career fairs and networking events, providing valuable guidance to current students."
+
+  utter_ask_about_grading_system:
+    - text: "The grading system at MNNIT Allahabad follows [Grading System Name], where grades are awarded based on your performance in exams, assignments, and projects."
+
+  utter_ask_about_faculty:
+    - text: "The faculty members at MNNIT Allahabad are highly qualified and experienced."
+
+  utter_ask_about_lab_facilities:
+    - text: "MNNIT offers state-of-the-art lab facilities for various departments, where students can conduct practical work and research."
+
+  utter_ask_about_student_support_services:
+    - text: "MNNIT provides comprehensive student support services, including counseling and academic assistance."
+
+  utter_ask_about_sports_facilities:
+    - text: "MNNIT has excellent sports facilities, including a sports complex and fields for various sports and recreational activities."
+
+  utter_ask_about_transportation:
+    - text: "MNNIT provides transportation services for daily commuting, and there are shuttle services available to nearby areas for students' convenience."
+
+  utter_ask_about_research_opportunities:
+    - text: "MNNIT offers research opportunities for students to get involved in various projects and collaborate with faculty members."
+
+  utter_ask_about_exam_preparation_tips:
+    - text: "Effective exam preparation involves creating a study schedule, revising regularly, and seeking help from professors if needed."
+
+  utter_ask_about_holidays:
+    - text: "MNNIT has designated holidays and breaks between semesters. You can plan your visits to your hometown during those breaks."
+
+  utter_ask_about_community_engagement:
+    - text: "MNNIT has a strong focus on community engagement, and students can participate in volunteering and social impact activities."
+
+  utter_ask_about_internship_opportunities:
+    - text: "MNNIT encourages students to explore internships to gain practical experience. The college's career services department assists with placements."
+
+  utter_ask_about_student_mental_health:
+    - text: "Student mental health is a priority at MNNIT, and counseling services are available for stress management and mental health support."
+
+  utter_ask_about_student_grievance_redressal:
+    - text: "MNNIT has a well-defined student grievance redressal process. You can submit complaints or feedback to the college administration."
+
+  utter_ask_about_social_events:
+    - text: "MNNIT hosts various social events and gatherings on campus, including cultural festivals and student-led activities."
+
+  utter_ask_about_part_time_jobs:
+    - text: "Students can work part-time while studying at MNNIT. The college offers on-campus part-time job opportunities and guidelines."
+
+  utter_ask_about_food_options:
+    - text: "MNNIT has different dining facilities on campus, providing various food options. Some hostels also have food delivery services."
+
+  utter_ask_about_healthcare_facilities:
+    - text: "MNNIT provides healthcare facilities on campus, including a college health center for medical assistance."
+
+  utter_ask_about_research_labs:
+    - text: "MNNIT has research labs available for students to work on various projects and explore their research ideas."
+
+  utter_ask_about_recreational_activities:
+    - text: "MNNIT offers a range of recreational activities on campus, including sports, arts, and music clubs for students to engage in leisure time."
+
+  utter_ask_about_community_culture:
+    - text: "MNNIT fosters a welcoming community culture, where students from diverse backgrounds are embraced and supported."
+
 
 session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+ session_expiration_time: 60
+ carry_over_slots_to_new_session: true
