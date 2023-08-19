@@ -129,15 +129,15 @@ nlu:
 
 - intent: ask_for_map
   examples: |
-    - Can you show me the map?
-    - Show me the map, please.
-    - I want to see the map.
+    - Can you show me the [map]{"entity":"Mnnit_map"}?
+    - Show me the [map]{"entity":"Mnnit_map"}, please.
+    - I want to see the [map]{"entity":"Mnnit_map"}.
 
-- intent: confirm_map_display
-  examples: |
-    - Thanks for the map.
-    - The map looks good.
-    - Looks great, thanks.
+#- intent: confirm_map_display
+#  examples: |
+#    - Thanks for the map.
+#    - The map looks good.
+#    - Looks great, thanks.
 
 - intent: ask_for_alternate_route
   examples: |

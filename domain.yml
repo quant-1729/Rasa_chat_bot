@@ -12,8 +12,10 @@ intents:
   - ask_for_directions
   - provide_location
   - provide_current_location
-  - ask_for_map
-  - confirm_map_display
+  - ask_for_map:
+     use_entities:
+      - Mnnit_map
+  # - confirm_map_display
   - ask_for_alternate_route
   - ask_about_traffic
   - provide_traffic_info
@@ -70,6 +72,8 @@ intents:
   - ask_about_research_labs
   - ask_about_recreational_activities
   - ask_about_community_culture
+entities:
+  - Mnnit_map
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -100,7 +104,7 @@ responses:
   - text: "Thank you! Now, could you tell me your current location or the starting point?"
 
   utter_ask_for_map:
-  - text: "Sure, here's the map to your destination."
+  - text: "Sure, here's the map to your destination [click here] (https://drive.google.com/drive/u/2/folders/1dOuihl_xiWERzAAQ5DqtB3A46WAUUTCM)"
 
   utter_confirm_map_display:
   - text: "You're welcome! If you need any further assistance, feel free to ask."

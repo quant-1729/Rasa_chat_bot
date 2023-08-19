@@ -1,6 +1,4 @@
-
-
-      version: "3.1"
+version: "3.1"
 
 stories:
 
@@ -197,6 +195,14 @@ stories:
   steps:
     - intent: ask_for_gas_stations
     - action: utter_ask_for_gas_stations
+
+- story: Ask for map
+  steps:
+    - intent: ask_for_map
+      entities:
+        - Mnnit_map: "map"
+    - action: utter_ask_for_map
+
 
 # Aman stories
 
