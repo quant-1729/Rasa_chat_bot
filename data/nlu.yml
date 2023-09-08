@@ -466,12 +466,6 @@ nlu:
     - Can I get involved in research projects?
     - How do I approach faculty for research collaborations?
 
-- intent: ask_about_exam_preparation_tips
-  examples: |
-    - Can you provide tips for exam preparation?
-    - How should I manage my study time effectively?
-    - Are there any study resources available for exams?
-
 - intent: ask_about_holidays
   examples: |
     - What are the holidays and vacations in the college?
@@ -606,7 +600,7 @@ nlu:
     - Diamond Jubliee Hostel
     - Academic building
     - KNGH
-    - Kamla Nehru Girls Hostel 
+    - Kamla Nehru Girls Hostel
     - KNGH Hostel
     - IHB Hostel
     - IHB
@@ -692,3 +686,71 @@ nlu:
   examples: |
     - Tell me about the college's community culture.
     - How are students from diverse backgrounds welcomed?
+
+#- intent: ask_about_exam_preparation_tips
+#  examples: |
+#    - Can you provide tips for exam preparation?
+#    - How should I manage my study time effectively?
+#    - Are there any study resources available for exams?
+
+# nlu.yml
+
+- intent: ask_about_exam_preparation_tips
+  examples: |
+    - Can you provide tips for [exam_type](final exams) preparation?
+    - How should I manage my study time effectively for [exam_type](midterms)?
+    - Are there any [study_resource](online resources) available for [exam_type](finals)?
+    - What are some effective study techniques for [exam_type](quizzes)?
+    - How can I improve my [exam_type](test) scores?
+    - Tell me about strategies for [exam_type](practical exams).
+    - Are there any recommended textbooks for [exam_type](final exams)?
+    - I need advice on preparing for [exam_type](oral exams).
+    - Can you suggest ways to stay focused during [exam_type](exams)?
+    - Where can I find [study_resource](past exam papers) for [exam_type](midterms)?
+    - What's the best approach to [exam_type](multiple-choice exams)?
+    - How can I manage stress during [exam_type](finals)?
+    - What are the key topics to cover for [exam_type](essays)?
+    - Are there any [study_resource](study groups) for [exam_type](quizzes)?
+    - What's the recommended study schedule for [exam_type](practical exams)?
+    - Can you share tips for [exam_type](open-book exams)?
+    - How do I review my notes effectively for [exam_type](oral exams)?
+    - What's the strategy for [exam_type](take-home exams)?
+    - How can I access [study_resource](online tutorials) for [exam_type](tests)?
+    - Tell me about time management for [exam_type](viva exams).
+
+# nlu.yml
+
+- entity: exam_type
+  values:
+    - final exams
+    - midterms
+    - online resources
+    - quizzes
+    - test scores
+    - practical exams
+    - recommended textbooks
+    - oral exams
+    - staying focused
+    - past exam papers
+    - multiple-choice exams
+    - managing stress
+    - key topics
+    - essays
+    - study groups
+    - study schedule
+    - open-book exams
+    - reviewing notes
+    - take-home exams
+    - online tutorials
+    - time management
+    - viva exams
+    # Add more exam types and related terms as needed
+
+- entity: study_resource
+  values:
+    - online resources
+    - past exam papers
+    - study groups
+    - recommended textbooks
+    - online tutorials
+    # Add more study resources specific to your context
