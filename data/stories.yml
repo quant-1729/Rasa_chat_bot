@@ -46,12 +46,7 @@ stories:
     - action: utter_ask_for_directions
     - intent: provide_location
     - action: utter_ask_for_location
-    - intent: provide_current_location
-    - action: utter_ask_for_map
-    - intent: confirm_map_display
-    - action: utter_confirm_map_display
-    - intent: goodbye
-    - action: utter_goodbye
+
 
 - story: alternate route and traffic info
   steps:
@@ -208,7 +203,7 @@ stories:
 
 - story: mnnit website path
   steps:
-  - intent: mnnit website
+  - intent: mnnit_website
   - action: utter_website
 
 - story: placements path
@@ -219,7 +214,7 @@ stories:
 - story: courses information
   steps:
   - intent: courses
-  - action: utter_course
+  - action: utter_coursez
 
 - story: intro to college
   steps:

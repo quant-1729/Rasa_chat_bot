@@ -37,7 +37,6 @@ intents:
   - ask_for_restaurants
   - ask_for_hotels
   - ask_for_gas_stations
-  - tell_name
   - mnnit_website
   - courses
   - ask_placements
@@ -72,6 +71,8 @@ intents:
   - ask_about_research_labs
   - ask_about_recreational_activities
   - ask_about_community_culture
+  - my_name
+  - mobile_number
 entities:
   - Mnnit_map
 responses:
@@ -104,7 +105,7 @@ responses:
   - text: "Thank you! Now, could you tell me your current location or the starting point?"
 
   utter_ask_for_map:
-  - text: "Sure, here's the map to your destination [click here] (https://drive.google.com/drive/u/2/folders/1dOuihl_xiWERzAAQ5DqtB3A46WAUUTCM)"
+  - text: "Sure, here's the map to your destination  (https://drive.google.com/drive/u/2/folders/1dOuihl_xiWERzAAQ5DqtB3A46WAUUTCM)"
 
   utter_confirm_map_display:
   - text: "You're welcome! If you need any further assistance, feel free to ask."

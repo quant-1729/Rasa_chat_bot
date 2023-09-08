@@ -347,6 +347,52 @@ nlu:
     - Tell me about the college library.
     - What resources are available in the library?
     - What are the library hours?
+    - Can you give me information about the library?
+    - What can I find in the library?
+    - When does the library open and close?
+    - What services does the library offer?
+    - What's the library schedule like?
+    - Where is the library located?
+    - Do you have a map of the library?
+    - What's the library's contact information?
+
+- lookup: library_resources
+  examples: |
+    - books
+    - journals
+    - online databases
+    - study spaces
+    - computers
+    - multimedia resources
+    - research materials
+
+- lookup: library_days
+  examples: |
+    - weekdays
+    - weekends
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    - Sunday
+
+- lookup: library_services
+  examples: |
+    - borrowing books
+    - research assistance
+    - workshops
+    - printing and copying
+    - online catalog access
+    - interlibrary loan
+
+- lookup: library_location
+  examples: |
+    - Where is the library located?
+    - Give me directions to the library.
+    - What's the address of the library?
+    - Can you tell me the library's location?
 
 - intent: ask_about_fees
   examples: |
@@ -468,17 +514,161 @@ nlu:
     - Are there any on-campus part-time job opportunities?
     - What are the rules for working part-time as a student?
 
+#- intent: ask_about_food_options
+#  examples: |
+#    - Tell me about the food options on campus.
+#    - Are there different dining facilities available?
+#    - Can I get food delivered to the hostel?
+
+# nlu.yml
+
 - intent: ask_about_food_options
   examples: |
     - Tell me about the food options on campus.
     - Are there different dining facilities available?
-    - Can I get food delivered to the hostel?
+    - Can I get food delivered to the [location](hostel)?
+    - What types of [food_type](cuisine) are served in the cafeteria?
+    - Where can I find [food_type](vegetarian) options on campus?
+    - Tell me more about the [food_type](pizza) place.
+    - Is there a [food_type](coffee shop) nearby?
+    - I'm looking for [food_type](Asian) cuisine. Any recommendations?
+    - What's the menu like at the [location](student center)?
+    - Are there any [food_type](vegan) options available?
+    - How do I order [food_type](burgers) from the campus restaurant?
+    - Can you recommend a good [food_type](Mexican) restaurant nearby?
+    - What are the hours of operation for the [location](dining hall)?
+    - Where can I get information about [food_type](desserts) on campus?
+    - Is there a [food_type](smoothie) bar in the gym?
+    - What's the pricing like for [food_type](sushi)?
+    - Are there any [food_type](Indian) food options around here?
+    - How can I find the [food_type](sandwich) place?
+    - Do we have a [food_type](fast food) restaurant on campus?
+    - Where can I find [food_type](gluten-free) options?
+    
+
+# nlu.yml
+
+- entity: food_type
+  values:
+    - cuisine
+    - vegetarian
+    - pizza
+    - coffee shop
+    - Asian
+    - vegan
+    - burgers
+    - Mexican
+    - dining hall
+    - desserts
+    - smoothie
+    - sushi
+    - Indian
+    - sandwich
+    - fast food
+    - gluten-free
+    - Meggie
+    - Aaloo Paratha
+    - Paneer Paratha
+    - Paneer Pakoda
+    - Paneer sabji
+    - Egg Curry
+    - Biriyani
+
+    # Add more food types and cuisines specific to your campus
+
+- entity: location
+  # Add location values relevant to your campus
+  values:
+    - campus
+    - hostel
+    - student center
+    - dining hall
+    - gym
+    - restaurant
+    - coffee shop
+    - cafeteria
+    - dining area
+    - fast food joint
+    - SVBH
+    - Swami Vivekanand Boys hostel
+    - Patel hostel
+    - Patel
+    - Tilak
+    - Tilak hostel
+    - Swastik Hostel
+    - Tondon hostel
+    - Tondon
+    - Malviya hostel
+    - Malviya
+    - DJ
+    - DJ hostel
+    - Diamond Jubliee Girls hostel
+    - Diamond Jubliee Hostel
+    - Academic building
+
+# Add more campus locations as needed
+
+
+#- intent: ask_about_healthcare_facilities
+#  examples: |
+#    - What healthcare facilities are available on campus?
+#    - Is there a college health center for medical assistance?
+#    - How can I access healthcare services?
+
+# nlu.yml
 
 - intent: ask_about_healthcare_facilities
   examples: |
     - What healthcare facilities are available on campus?
-    - Is there a college health center for medical assistance?
+    - Is there a [facility_type](medical clinic) for medical assistance?
     - How can I access healthcare services?
+    - Tell me about the [facility_type](campus nurse).
+    - Where is the nearest [facility_type](hospital) on campus?
+    - Are there any doctors available in the [facility_type](campus area)?
+    - Can you provide information on the [facility_type](dental clinic)?
+    - I need to find the [facility_type](pharmacy) on campus.
+    - How do I contact the [facility_type](campus nurse)?
+    - Where can I get first aid on campus?
+    - Are there any [facility_type](mental health services) available?
+    - Tell me more about the [facility_type](health and wellness center).
+    - What services does the [facility_type](student health center) offer?
+    - Do we have an on-campus [facility_type](optometrist)?
+    - Is there a [facility_type](gym with medical facilities)?
+    - I'm looking for the [facility_type](physical therapy center).
+    - How do I schedule an appointment at the [facility_type](campus clinic)?
+    - What are the hours of operation for the [facility_type](health center)?
+    - Can you recommend a good [facility_type](dermatologist) on campus?
+    - Where can I get information about [facility_type](COVID-19 testing)?
+    
+# nlu.yml
+
+- entity: facility_type
+  values:
+    - medical clinic
+    - pharmacy
+    - campus nurse
+    - mental health services
+    - health and wellness center
+    - student health center
+    - optometrist
+    - gym with medical facilities
+    - physical therapy center
+    - dermatologist
+    - COVID-19 testing
+    - phesothyripyst
+
+- entity: location
+  # Add location values relevant to your campus
+  values:
+    - campus
+    - main building
+    - student center
+    - library
+    - dormitory
+    - cafeteria
+    # Add more campus locations as needed
+
+
 
 - intent: ask_about_research_labs
   examples: |
