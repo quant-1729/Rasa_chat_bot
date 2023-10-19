@@ -287,6 +287,8 @@ responses:
   utter_ask_about_community_culture:
     - text: "MNNIT fosters a welcoming community culture, where students from diverse backgrounds are embraced and supported."
 
+actions:
+  - action_fallback
 
 session_config:
  session_expiration_time: 60
